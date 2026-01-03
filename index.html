@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EthioLearn | Grade 5–10</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>EthioLearn</h1>
+  <p>Learn your school subjects clearly</p>
+</header>
+
+<main id="app">
+  <section id="grade-screen" class="screen active">
+    <h2>Select Your Grade</h2>
+    <div class="grid" id="gradeList"></div>
+  </section>
+
+  <section id="subject-screen" class="screen">
+    <h2 id="selectedGrade"></h2>
+    <div class="grid" id="subjectList"></div>
+    <button onclick="goBack('grade')">← Back</button>
+  </section>
+
+  <section id="lesson-screen" class="screen">
+    <h2 id="lessonTitle"></h2>
+    <p id="lessonContent"></p>
+    <button onclick="goBack('subject')">← Back</button>
+  </section>
+</main>
+
+<footer>
+  <p>© EthioLearn</p>
+</footer>
+
+<script src="data/curriculum.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
